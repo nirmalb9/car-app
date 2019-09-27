@@ -21,4 +21,4 @@ You can extend a lot of what you do with single frame lane detection to a contin
 There are a fair amount of tutorials online that followed the Hough Transform method using the CV library that helped implement the hough transform method for each of those frames.
 
 Overlayed result:
-![Result Video](continuousLaneDetection/output.mp4)
+![Result Video](continuousLaneDetection/output.gif)
