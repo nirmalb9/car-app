@@ -22,3 +22,18 @@ There are a fair amount of tutorials online that followed the Hough Transform me
 
 Overlayed result:
 ![Result Video](continuousLaneDetection/output.gif)
+
+
+There are a couple of problems with the above approach that doesn't allow us to use this in most road conditions:
+1. Since the above algorithm only looks for linear graphs and patterns within the road, it fails to properly account for curved lanes
+2. Straight lines can exist within subspaces of any given frame which makes it hard to know what necessarily counts as a lane (i.e. traffic signs)
+3. The mask parameters can't adapt for drastic changing environments without manually changing the dimensions 
+4. Visibility of the area isn't always clear, i.e. different amounts of saturation or brightness in any given scene. 
+
+There's research that utilizes spatial CNNs (which capture rows and columns as separate layers to better represent spatial information) and other image segmentation techniques that perform better.
+
+
+
+
+
+
